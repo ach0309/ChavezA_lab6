@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,46 +8,38 @@
 
 
     <Button
-        android:id="@+id/insert_stock_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:id="@+id/main_insert_stock_button"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
         android:text="Insert Stock"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price_text_view" />
-
-    <EditText
-        android:id="@+id/name_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/price_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/price_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
 
     <Button
-        android:id="@+id/get_all_stocks_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Get all stocks"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insert_stock_button" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/main_update_stock_button"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Update Stock"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_insert_stock_button"/>
+
+    <Button
+        android:id="@+id/main_search_stock_button"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Search Stock"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_update_stock_button" />
+
+    <Button
+        android:id="@+id/main_clear_button"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Clear all Stocks"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_search_stock_button" />
+
+</RelativeLayout>
